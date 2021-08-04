@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarRatingView">
+            <connections>
+                <outlet property="fifthStarButton" destination="G1o-Kp-qQS" id="8TV-Ez-kI6"/>
+                <outlet property="firstStarButton" destination="zuJ-2P-YJA" id="mvI-Vv-PbE"/>
+                <outlet property="fourthStarButton" destination="g1J-qZ-cpW" id="VyN-UM-ty1"/>
+                <outlet property="secondStarButton" destination="43u-d7-qSu" id="MUp-sb-0AH"/>
+                <outlet property="thirdStarButton" destination="ECY-Ai-Nwe" id="xik-5v-tzx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuJ-2P-YJA">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zuJ-2P-YJA" secondAttribute="height" multiplier="1:1" id="hQH-r6-rZc"/>
+                    </constraints>
+                    <state key="normal" image="single-star-empty"/>
+                    <connections>
+                        <action selector="tappedButtonOne:" destination="-1" eventType="touchUpInside" id="bYA-RV-t13"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43u-d7-qSu">
+                    <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="43u-d7-qSu" secondAttribute="height" multiplier="1:1" id="83I-3N-b4e"/>
+                    </constraints>
+                    <state key="normal" image="single-star-empty"/>
+                    <connections>
+                        <action selector="tappedButtonTwo:" destination="-1" eventType="touchUpInside" id="qow-oO-WEI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1J-qZ-cpW">
+                    <rect key="frame" x="300" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="g1J-qZ-cpW" secondAttribute="height" multiplier="1:1" id="BHB-PP-Mxg"/>
+                    </constraints>
+                    <state key="normal" image="single-star-empty"/>
+                    <connections>
+                        <action selector="tappedButtonFour:" destination="-1" eventType="touchUpInside" id="BHn-YS-Y3c"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-Kp-qQS">
+                    <rect key="frame" x="400" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="G1o-Kp-qQS" secondAttribute="height" multiplier="1:1" id="tEA-nX-hkM"/>
+                    </constraints>
+                    <state key="normal" image="single-star-empty"/>
+                    <connections>
+                        <action selector="tappedButtonFive:" destination="-1" eventType="touchUpInside" id="VNF-Wa-rc2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECY-Ai-Nwe">
+                    <rect key="frame" x="200" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ECY-Ai-Nwe" secondAttribute="height" multiplier="1:1" id="AgY-lS-mx7"/>
+                    </constraints>
+                    <state key="normal" image="single-star-empty"/>
+                    <connections>
+                        <action selector="tappedButtonThree:" destination="-1" eventType="touchUpInside" id="UxQ-NF-TnM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g1J-qZ-cpW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2bX-hp-6r5"/>
+                <constraint firstItem="ECY-Ai-Nwe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2uQ-xL-r3d"/>
+                <constraint firstItem="43u-d7-qSu" firstAttribute="leading" secondItem="zuJ-2P-YJA" secondAttribute="trailing" id="HIG-mL-t0G"/>
+                <constraint firstAttribute="bottom" secondItem="43u-d7-qSu" secondAttribute="bottom" id="KtW-H4-O2m"/>
+                <constraint firstItem="G1o-Kp-qQS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qyp-yD-MVr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="G1o-Kp-qQS" secondAttribute="trailing" id="bO0-y3-cHl"/>
+                <constraint firstItem="G1o-Kp-qQS" firstAttribute="leading" secondItem="g1J-qZ-cpW" secondAttribute="trailing" id="gPz-fb-VMs"/>
+                <constraint firstItem="ECY-Ai-Nwe" firstAttribute="leading" secondItem="43u-d7-qSu" secondAttribute="trailing" id="hkH-Sj-fo5"/>
+                <constraint firstItem="G1o-Kp-qQS" firstAttribute="width" secondItem="zuJ-2P-YJA" secondAttribute="width" id="ijm-9H-NLe"/>
+                <constraint firstItem="43u-d7-qSu" firstAttribute="width" secondItem="zuJ-2P-YJA" secondAttribute="width" id="kzC-ZI-edU"/>
+                <constraint firstItem="ECY-Ai-Nwe" firstAttribute="width" secondItem="zuJ-2P-YJA" secondAttribute="width" id="pru-BK-tpd"/>
+                <constraint firstItem="zuJ-2P-YJA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sbm-h3-byL"/>
+                <constraint firstItem="g1J-qZ-cpW" firstAttribute="leading" secondItem="ECY-Ai-Nwe" secondAttribute="trailing" id="xBL-ev-vVw"/>
+                <constraint firstItem="g1J-qZ-cpW" firstAttribute="width" secondItem="zuJ-2P-YJA" secondAttribute="width" id="xvt-s4-sB9"/>
+                <constraint firstItem="zuJ-2P-YJA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yoh-E6-lr1"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="256.52173913043481" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="single-star-empty" width="33" height="33"/>
+    </resources>
+</document>

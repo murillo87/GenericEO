@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="SingleColumnTableTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHq-Oh-hBS">
+                        <rect key="frame" x="0.0" y="5" width="320" height="33"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="HrD-dl-gNu"/>
+                        </constraints>
+                    </view>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zvV-QD-C1P">
+                        <rect key="frame" x="0.0" y="40" width="320" height="110.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110.5" id="HST-BM-bKw"/>
+                        </constraints>
+                    </tableView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX7-bf-iEL">
+                        <rect key="frame" x="15" y="11" width="290" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1If-jM-Yao"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UHq-Oh-hBS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="20X-ns-1Hk"/>
+                    <constraint firstItem="TX7-bf-iEL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3cE-1C-QkB"/>
+                    <constraint firstItem="UHq-Oh-hBS" firstAttribute="centerY" secondItem="TX7-bf-iEL" secondAttribute="centerY" id="8Fr-aM-HJv"/>
+                    <constraint firstAttribute="bottom" secondItem="zvV-QD-C1P" secondAttribute="bottom" id="LYv-T0-xrd"/>
+                    <constraint firstItem="zvV-QD-C1P" firstAttribute="top" secondItem="TX7-bf-iEL" secondAttribute="bottom" constant="8" id="Tbq-cM-65J"/>
+                    <constraint firstAttribute="trailing" secondItem="zvV-QD-C1P" secondAttribute="trailing" id="cpD-GF-wCV"/>
+                    <constraint firstAttribute="trailing" secondItem="UHq-Oh-hBS" secondAttribute="trailing" id="dfQ-Mq-QJO"/>
+                    <constraint firstItem="TX7-bf-iEL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="e3f-Dn-zrC"/>
+                    <constraint firstItem="zvV-QD-C1P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gZA-fh-ylG"/>
+                    <constraint firstItem="TX7-bf-iEL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rEQ-mT-fZq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="headerBar" destination="UHq-Oh-hBS" id="Ym4-3l-9iq"/>
+                <outlet property="tableView" destination="zvV-QD-C1P" id="4yz-jn-Hdx"/>
+                <outlet property="tableViewHeight" destination="HST-BM-bKw" id="sJg-mR-K6c"/>
+                <outlet property="titleLabel" destination="TX7-bf-iEL" id="Nlz-RM-99k"/>
+                <outlet property="titleLabelHeightConstraint" destination="1If-jM-Yao" id="8a1-7U-nAe"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="107.5"/>
+        </tableViewCell>
+    </objects>
+</document>

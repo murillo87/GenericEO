@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ABWriteReviewViewController">
+            <connections>
+                <outlet property="backButton" destination="2Iq-rI-79p" id="hzu-aY-ZYo"/>
+                <outlet property="bottomSpace" destination="g3a-zk-LCH" id="pvV-xM-zAG"/>
+                <outlet property="reviewTextView" destination="Deb-qp-wyT" id="Q5b-Bw-Ful"/>
+                <outlet property="saveButton" destination="LcO-zJ-3wO" id="ME9-6v-eHw"/>
+                <outlet property="starRatingView" destination="iKK-xP-L6q" id="FaZ-f6-vag"/>
+                <outlet property="titleLabel" destination="t4g-pu-Vzh" id="Bnh-7h-ny5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKK-xP-L6q" customClass="StarRatingView">
+                    <rect key="frame" x="97" y="103" width="220" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ao4-C3-Raw"/>
+                        <constraint firstAttribute="width" constant="220" id="jE0-Fc-fZt"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4g-pu-Vzh">
+                    <rect key="frame" x="46" y="74" width="322" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iq-rI-79p">
+                    <rect key="frame" x="12" y="73.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="iS3-TQ-S8Y"/>
+                        <constraint firstAttribute="width" constant="22" id="qde-3f-Mer"/>
+                    </constraints>
+                    <state key="normal" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="Vsg-o0-Y2J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcO-zJ-3wO">
+                    <rect key="frame" x="376" y="73.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="o7s-5S-zB5"/>
+                    </constraints>
+                    <state key="normal" image="checkmark" catalog="system"/>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchUpInside" id="u8Q-9a-kRS"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write your review here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-qp-wyT">
+                    <rect key="frame" x="30" y="155" width="354" height="677"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="2Iq-rI-79p" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12" id="7wR-KP-lHO"/>
+                <constraint firstItem="iKK-xP-L6q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="88u-TX-S88"/>
+                <constraint firstItem="iKK-xP-L6q" firstAttribute="top" secondItem="t4g-pu-Vzh" secondAttribute="bottom" constant="8" id="8cx-mk-yfe"/>
+                <constraint firstItem="Deb-qp-wyT" firstAttribute="top" secondItem="iKK-xP-L6q" secondAttribute="bottom" constant="8" id="Ck8-uA-lx1"/>
+                <constraint firstItem="t4g-pu-Vzh" firstAttribute="centerY" secondItem="2Iq-rI-79p" secondAttribute="centerY" id="ELj-rT-IOj"/>
+                <constraint firstItem="t4g-pu-Vzh" firstAttribute="leading" secondItem="2Iq-rI-79p" secondAttribute="trailing" constant="12" id="Sqd-Q9-5qA"/>
+                <constraint firstItem="Deb-qp-wyT" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="bMb-lO-6Hp"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Deb-qp-wyT" secondAttribute="bottom" constant="30" id="g3a-zk-LCH"/>
+                <constraint firstItem="LcO-zJ-3wO" firstAttribute="centerY" secondItem="t4g-pu-Vzh" secondAttribute="centerY" id="h3E-xB-Rfd"/>
+                <constraint firstItem="t4g-pu-Vzh" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="hts-Xh-hx4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Deb-qp-wyT" secondAttribute="trailing" constant="30" id="pM0-Q4-I9P"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LcO-zJ-3wO" secondAttribute="trailing" constant="16" id="qbm-Pa-6GH"/>
+                <constraint firstItem="t4g-pu-Vzh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x3z-e3-KVy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

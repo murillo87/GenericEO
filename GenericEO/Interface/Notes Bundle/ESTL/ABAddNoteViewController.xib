@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ABAddNoteViewController">
+            <connections>
+                <outlet property="backButton" destination="WfH-yE-CjE" id="AkA-Pa-eh8"/>
+                <outlet property="bottomSpace" destination="xrp-JQ-14y" id="6tv-95-yQS"/>
+                <outlet property="noteTextView" destination="sB8-Ap-GgH" id="ndU-qM-rXz"/>
+                <outlet property="saveButton" destination="Rmq-5O-nJy" id="pWK-04-pcL"/>
+                <outlet property="titleLabel" destination="CWJ-XR-l2L" id="KXC-lD-Vfh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWJ-XR-l2L">
+                    <rect key="frame" x="46" y="74" width="322" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfH-yE-CjE">
+                    <rect key="frame" x="12" y="73.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="1fT-kL-Dzp"/>
+                    </constraints>
+                    <state key="normal" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="hlP-aw-y93"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmq-5O-nJy">
+                    <rect key="frame" x="376" y="73.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="Ra7-0z-N1I"/>
+                    </constraints>
+                    <state key="normal" image="checkmark" catalog="system"/>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchUpInside" id="7gB-4i-J6u"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write your note here." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sB8-Ap-GgH">
+                    <rect key="frame" x="30" y="111.5" width="354" height="720.5"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Rmq-5O-nJy" secondAttribute="trailing" constant="16" id="4rD-eD-AEf"/>
+                <constraint firstItem="CWJ-XR-l2L" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="5v5-AV-rvw"/>
+                <constraint firstItem="CWJ-XR-l2L" firstAttribute="leading" secondItem="WfH-yE-CjE" secondAttribute="trailing" constant="12" id="6JC-hJ-wNx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="sB8-Ap-GgH" secondAttribute="trailing" constant="30" id="73Y-2x-I2t"/>
+                <constraint firstItem="Rmq-5O-nJy" firstAttribute="centerY" secondItem="CWJ-XR-l2L" secondAttribute="centerY" id="8Nv-GG-yAP"/>
+                <constraint firstItem="WfH-yE-CjE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12" id="LwK-uJ-mCe"/>
+                <constraint firstItem="CWJ-XR-l2L" firstAttribute="centerY" secondItem="WfH-yE-CjE" secondAttribute="centerY" id="UnS-TW-JR9"/>
+                <constraint firstItem="sB8-Ap-GgH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="30" id="ZIj-n0-IxS"/>
+                <constraint firstItem="CWJ-XR-l2L" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gSZ-5t-N9L"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="sB8-Ap-GgH" secondAttribute="bottom" constant="30" id="xrp-JQ-14y"/>
+                <constraint firstItem="sB8-Ap-GgH" firstAttribute="top" secondItem="Rmq-5O-nJy" secondAttribute="bottom" constant="16" id="yQV-7E-uFf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

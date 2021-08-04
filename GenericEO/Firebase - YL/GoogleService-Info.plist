@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>604485819488-ch74ek9lsefurdbaotb0fhaoa063dq8i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.604485819488-ch74ek9lsefurdbaotb0fhaoa063dq8i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDNRQGDPV1MYwJ9tMof2UYNq2eiT4PcsLM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>604485819488</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.essentl.oil.youngliving</string>
+	<key>PROJECT_ID</key>
+	<string>estl-myeo-yl</string>
+	<key>STORAGE_BUCKET</key>
+	<string>estl-myeo-yl.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:604485819488:ios:1608fad68324f8af</string>
+	<key>DATABASE_URL</key>
+	<string>https://estl-myeo-yl.firebaseio.com</string>
+</dict>
+</plist>

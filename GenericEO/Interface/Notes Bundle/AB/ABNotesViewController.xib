@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ABNotesViewController">
+            <connections>
+                <outlet property="addButton" destination="k8V-WX-Ajc" id="Qj9-1s-dL9"/>
+                <outlet property="backButton" destination="bvg-dp-gf7" id="U0b-26-KyI"/>
+                <outlet property="segmentedControl" destination="R78-YC-fau" id="esc-mH-Xmf"/>
+                <outlet property="tableView" destination="px8-d2-5c5" id="TAO-cm-EJD"/>
+                <outlet property="titleLabel" destination="eNJ-Ya-5HS" id="4oq-e4-62r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8V-WX-Ajc">
+                    <rect key="frame" x="382" y="73.5" width="20" height="22"/>
+                    <state key="normal" image="plus.circle" catalog="system"/>
+                    <connections>
+                        <action selector="add:" destination="-1" eventType="touchUpInside" id="pzd-YL-mkF"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="px8-d2-5c5">
+                    <rect key="frame" x="0.0" y="166" width="414" height="696"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R78-YC-fau">
+                    <rect key="frame" x="50" y="115" width="314" height="32"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                        <segment title=""/>
+                    </segments>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNJ-Ya-5HS">
+                    <rect key="frame" x="186" y="74" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvg-dp-gf7">
+                    <rect key="frame" x="12" y="73.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="NaD-CM-GC9"/>
+                    </constraints>
+                    <state key="normal" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="uU3-1G-lWG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="k8V-WX-Ajc" firstAttribute="centerY" secondItem="eNJ-Ya-5HS" secondAttribute="centerY" id="Jd9-6c-4dX"/>
+                <constraint firstItem="R78-YC-fau" firstAttribute="top" secondItem="eNJ-Ya-5HS" secondAttribute="bottom" constant="20" id="LMJ-Dq-Mw9"/>
+                <constraint firstItem="bvg-dp-gf7" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12" id="MHp-mD-w4S"/>
+                <constraint firstItem="eNJ-Ya-5HS" firstAttribute="centerY" secondItem="bvg-dp-gf7" secondAttribute="centerY" id="Mrx-qf-zPE"/>
+                <constraint firstItem="eNJ-Ya-5HS" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="SDV-zP-yJr"/>
+                <constraint firstItem="px8-d2-5c5" firstAttribute="top" secondItem="R78-YC-fau" secondAttribute="bottom" constant="20" id="SXT-5t-LC6"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="px8-d2-5c5" secondAttribute="bottom" id="SbP-H9-PoT"/>
+                <constraint firstItem="R78-YC-fau" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ynp-NA-Vt7"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="R78-YC-fau" secondAttribute="trailing" constant="50" id="Yol-Sw-q9Y"/>
+                <constraint firstItem="eNJ-Ya-5HS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a65-3o-nzM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="k8V-WX-Ajc" secondAttribute="trailing" constant="12" id="dLr-xD-snB"/>
+                <constraint firstItem="R78-YC-fau" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="50" id="pBd-46-MCV"/>
+                <constraint firstItem="px8-d2-5c5" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="qM1-Pn-p6H"/>
+                <constraint firstItem="px8-d2-5c5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="vMs-X7-T1u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="141" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

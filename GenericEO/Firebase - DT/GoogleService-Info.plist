@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>739329224284-ogrdrht5ojde0gqv383pkneiguoc1tr4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.739329224284-ogrdrht5ojde0gqv383pkneiguoc1tr4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAEwJg1erq79SHo8TRi6EbDRI75kWNOkiU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>739329224284</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.essentl.oil.doterra</string>
+	<key>PROJECT_ID</key>
+	<string>estl-doterra-myeo</string>
+	<key>STORAGE_BUCKET</key>
+	<string>estl-doterra-myeo.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:739329224284:ios:a00c5b816e66be4e</string>
+	<key>DATABASE_URL</key>
+	<string>https://estl-doterra-myeo.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ABPaywallView">
+            <connections>
+                <outlet property="descriptionLabel" destination="qBP-zt-Qnc" id="c1T-W6-mDF"/>
+                <outlet property="iconImageView" destination="htc-Hf-RFj" id="BM6-Rm-xHE"/>
+                <outlet property="titleLabel" destination="206-ak-kgW" id="9O0-AI-JFW"/>
+                <outlet property="upgradeButton" destination="sRd-pf-VBy" id="HjE-45-kfK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="i5V-rR-L8T">
+                    <rect key="frame" x="30" y="331.5" width="354" height="193.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.lock" translatesAutoresizingMaskIntoConstraints="NO" id="htc-Hf-RFj">
+                            <rect key="frame" x="137" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="v6h-JN-CEm"/>
+                                <constraint firstAttribute="width" secondItem="htc-Hf-RFj" secondAttribute="height" multiplier="1:1" id="yzY-eq-r4m"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Wqg-vq-aTT">
+                            <rect key="frame" x="0.0" y="92" width="354" height="49.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="206-ak-kgW">
+                                    <rect key="frame" x="149" y="0.0" width="56" height="26.5"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBP-zt-Qnc">
+                                    <rect key="frame" x="157.5" y="30.5" width="39.5" height="19"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRd-pf-VBy">
+                            <rect key="frame" x="111" y="153.5" width="132" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="EVp-xZ-ADf"/>
+                                <constraint firstAttribute="height" constant="40" id="sDw-0T-PNz"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Upgrade"/>
+                            <connections>
+                                <action selector="upgrade:" destination="-1" eventType="touchUpInside" id="5In-wl-HVt"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Wqg-vq-aTT" firstAttribute="leading" secondItem="i5V-rR-L8T" secondAttribute="leading" id="hPQ-34-lV4"/>
+                        <constraint firstAttribute="trailing" secondItem="Wqg-vq-aTT" secondAttribute="trailing" id="oXe-CY-dGA"/>
+                        <constraint firstItem="sRd-pf-VBy" firstAttribute="centerX" secondItem="i5V-rR-L8T" secondAttribute="centerX" id="uIA-HT-0iR"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="i5V-rR-L8T" secondAttribute="trailing" constant="30" id="GMr-nV-XAr"/>
+                <constraint firstItem="i5V-rR-L8T" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LLT-sc-Nj4"/>
+                <constraint firstItem="i5V-rR-L8T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="pxK-j4-K1G"/>
+                <constraint firstItem="i5V-rR-L8T" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-20" id="rgO-Kn-6x2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="141" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.lock" width="85.333335876464844" height="85.333335876464844"/>
+    </resources>
+</document>
